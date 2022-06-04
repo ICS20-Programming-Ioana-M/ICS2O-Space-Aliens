@@ -1,10 +1,9 @@
 /* global Phaser */
 
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) 2022 Ioana All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
-// This is the Phaser3 configuration file
+// Created by: Ioana Marinescu
+// Created on: June 2022
 
 import SplashScene from './splashScene.js'
 import TitleScene from './titleScene.js'
