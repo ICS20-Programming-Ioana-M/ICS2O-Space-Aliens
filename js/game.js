@@ -5,12 +5,17 @@
 // Created by: Ioana Marinescu
 // Created on: June 2022
 
+// importing scenes
 import SplashScene from './splashScene.js'
 import TitleScene from './titleScene.js'
+import MenuScene from './menuScene.js'
+import GameScene from './gameScene.js'
 
 // Our game scenes
 const splashScene = new SplashScene()
 const titleScene = new TitleScene()
+const menuScene = new MenuScene()
+const gameScene = new GameScene()
 
 // Game scene startup info
 const config = {
@@ -32,11 +37,14 @@ const config = {
   }
 }
 
+// Sets up a new game
 const game = new Phaser.Game(config)
 
 // loads scenes
 game.scene.add('splashScene', splashScene)
 game.scene.add('titleScene', titleScene)
+game.scene.add('menuScene', menuScene)
+game.scene.add('gameScene', gameScene)
 
 // start title
 game.scene.start('splashScene')
