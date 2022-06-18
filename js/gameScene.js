@@ -62,7 +62,7 @@ class GameScene extends Phaser.Scene {
   // so much happening in here but basically it just makes things
   create (data) {
     // sets background
-    this.background = this.add.image(0, 0, 'starBackground').setScale(2.0)
+    this.background = this.add.image(0, 0, 'starBackground').setScale(4.3)
     this.background.setOrigin(0, 0)
 
     // sets score
@@ -150,7 +150,7 @@ class GameScene extends Phaser.Scene {
         item.x = alienXLocation
         item.y = 0
       }
-      if (item.x > 1920) {
+      if (item.x > 1920 || item.x < 0) {
         item.x = alienXLocation
         item.y = 0
       }
